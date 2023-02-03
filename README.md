@@ -46,7 +46,7 @@ hasura_admin_secret = "admin_password"
 hasura_jwt_secret_key = "json_secret_key"
 rds_password = "somecrypticpassword"
 ```
-
+You need to search for `domain.com` and switch this for your specific domain. This is assuming you are hosing your DNS on Route53.
 
 ### Additional info about variables
 
