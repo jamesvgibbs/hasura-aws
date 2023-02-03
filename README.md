@@ -39,6 +39,14 @@ Copy and paste into your Terraform configuration, edit the variables, and run `t
   ecs_cluster_name                = "YOUR CLUSTER NAME"
 }
 ```
+You will also need to create a `hasura.tfvars` file to house three different valriables. 
+
+```text
+hasura_admin_secret = "admin_password"
+hasura_jwt_secret_key = "json_secret_key"
+rds_password = "somecrypticpassword"
+```
+
 
 ### Additional info about variables
 
