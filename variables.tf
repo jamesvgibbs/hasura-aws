@@ -17,20 +17,20 @@ variable "region" {
 
 variable "existing_vpc" {
   description = "The existing VPC ID"
-  default = "vpc-076ddf2a7c07736f4"
+  default = "vpc-xxxxxxx"
 }
 
 variable "vpc_subnets" {
   description = "List of Subnet IDs"
   default = [
-    "subnet-00184246df1e74635",
-    "subnet-097dbdba71db326f1"
+    "subnet-xxxxx",
+    "subnet-xxxxx"
   ]
 }
 
 variable "domain" {
   description = "Domain name. Service will be deployed using the hasura_subdomain"
-  default = "greatjones.co"
+  default = "domain.com"
 }
 
 variable "hasura_subdomain" {
@@ -44,7 +44,7 @@ variable "app_subdomain" {
 }
 variable "hasura_version_tag" {
   description = "The hasura graphql engine version tag"
-  default     = "v2.15.0"
+  default     = "v2.17.1"
 }
 
 variable "hasura_admin_secret" {
@@ -108,7 +108,7 @@ variable "multi_az" {
 variable "additional_db_security_groups" {
   description = "List of Security Group IDs to have access to the RDS instance"
   default     = [
-    "sg-05aa06ed50a1fcc4a"
+    "sg-xxxxxx"
   ]
 }
 
